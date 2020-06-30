@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'AngularPractice';
+  firstMediaItem = {
+    id: 1,
+    name: 'Power Rangers: The Movie',
+    medium: 'Movie',
+    category: 'Action-Adventure',
+    year: 1995,
+    watchedOn: '09/07/2016',
+    isFavorite: false
+  };
 }
