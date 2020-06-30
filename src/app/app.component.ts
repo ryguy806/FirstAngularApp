@@ -15,5 +15,6 @@ export class AppComponent {
     watchedOn: '09/07/2016',
     isFavorite: false
   };
+  title: 'AngularPractice';
   onMediaItemDelete(mediaItem): void {}
 }
