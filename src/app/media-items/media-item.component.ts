@@ -7,8 +7,7 @@ import {Component} from '@angular/core';
 })
 
 export class MediaItemComponent {
-  name = 'Pokemon: The First Movie';
-  wasWatched(): boolean {
-    return true;
+  onDelete(): void {
+    console.log('delete');
   }
 }
