@@ -17,6 +17,9 @@ export class MediaItemListComponent implements OnInit{
   }
 
   ngOnInit(): void {
-    this.mediaItems = this.mediaItemService.get();
+    this.mediaItemService.get()
+      .subscribe(mediaItems => {
+        this.mediaItems = mediaItems;
+      });
   }
 }
