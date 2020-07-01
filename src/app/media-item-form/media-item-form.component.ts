@@ -17,8 +17,7 @@ export class MediaItemFormComponent implements OnInit{
     @Inject(lookupListToken) public lookupLists) {}
 
   onSubmit(mediaItem): void {
-    console.log(mediaItem);
-    this.mediaItemService.add(mediaItem);
+    this.mediaItemService.add(mediaItem).subscribe();
   }
 
   ngOnInit(): void {
