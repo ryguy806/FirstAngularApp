@@ -1,7 +1,7 @@
 <header
   [ngClass]="{'medium-movies':medium === 'Movies', 'medium-series':medium === 'Series'}">
-  <h2>{{medium}}</h2>
-  <div *ngIf="mediaItems">{{ mediaItems | categoryList }}</div>
+  <h2>{{medium | titlecase}}</h2>
+  <div *ngIf="mediaItems">{{ mediaItems | categoryList | titlecase }}</div>
 </header>
 <section>
   <app-mw-media-item

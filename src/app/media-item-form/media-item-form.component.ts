@@ -2,6 +2,7 @@ import { Component, OnInit, Inject } from '@angular/core';
 import {FormGroup, FormControl, Validators, FormBuilder} from '@angular/forms';
 import {MediaItemService} from '../services/media-item.service';
 import {lookupListToken} from '../providers/providers';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-mw-media-item-form',
@@ -14,15 +15,19 @@ export class MediaItemFormComponent implements OnInit{
   constructor(
     private formBuilder: FormBuilder,
     private mediaItemService: MediaItemService,
-    @Inject(lookupListToken) public lookupLists) {}
+    @Inject(lookupListToken) public lookupLists,
+    private router: Router) {}
 
   onSubmit(mediaItem): void {
-    this.mediaItemService.add(mediaItem).subscribe();
+    this.mediaItemService.add(mediaItem).subscribe(() => {
+      this.router.navigate(['/', mediaItem.medium])
+        .then();
+    });
   }
 
   ngOnInit(): void {
     this.form = this.formBuilder.group({
-      medium: this.formBuilder.control('Movies'),
+      medium: this.formBuilder.control('movies'),
       name: this.formBuilder.control('', Validators.compose([
           Validators.required,
           Validators.pattern('[\\w\\-\\s\/]+'),
