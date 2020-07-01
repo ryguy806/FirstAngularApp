@@ -6,7 +6,7 @@ import {MediaItemListComponent} from './media-item-list/media-item-list.componen
 import {MediaItemFormComponent} from './media-item-form/media-item-form.component';
 import {FavoriteDirective} from './directives/favorite.directive';
 import {CategoryListPipe} from './category-lists/category-list.pipe';
-import {FormsModule} from '@angular/forms';
+import {ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,7 @@ import {FormsModule} from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    FormsModule,
+    ReactiveFormsModule,
   ],
   bootstrap: [
     AppComponent
