@@ -10,6 +10,7 @@ import {ReactiveFormsModule} from '@angular/forms';
 import {lookupLists, lookupListToken} from './providers/providers';
 import {HttpClientModule, HttpXhrBackend} from '@angular/common/http';
 import {MockXHRBackend} from './mock-xhr-backend';
+import {routing} from './routing/app.routing';
 
 
 
@@ -30,6 +31,7 @@ import {MockXHRBackend} from './mock-xhr-backend';
     BrowserModule,
     ReactiveFormsModule,
     HttpClientModule,
+    routing,
   ],
   bootstrap: [
     AppComponent
