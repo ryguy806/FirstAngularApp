@@ -6,7 +6,7 @@ export class MockXHRBackend implements HttpBackend {
     {
       id: 1,
       name: 'Firebug',
-      medium: 'Series',
+      medium: 'series',
       category: 'Science Fiction',
       year: 2010,
       watchedOn: 1294166565384,
@@ -15,7 +15,7 @@ export class MockXHRBackend implements HttpBackend {
     {
       id: 2,
       name: 'The Small Tall',
-      medium: 'Movies',
+      medium: 'movies',
       category: 'Comedy',
       year: 2015,
       watchedOn: null,
@@ -23,7 +23,7 @@ export class MockXHRBackend implements HttpBackend {
     }, {
       id: 3,
       name: 'The Redemption',
-      medium: 'Movies',
+      medium: 'movies',
       category: 'Action',
       year: 2016,
       watchedOn: null,
@@ -31,7 +31,7 @@ export class MockXHRBackend implements HttpBackend {
     }, {
       id: 4,
       name: 'Hoopers',
-      medium: 'Series',
+      medium: 'series',
       category: 'Drama',
       year: null,
       watchedOn: null,
@@ -39,7 +39,7 @@ export class MockXHRBackend implements HttpBackend {
     }, {
       id: 5,
       name: 'Happy Joe: Cheery Road',
-      medium: 'Movies',
+      medium: 'movies',
       category: 'Action',
       year: 2015,
       watchedOn: 1457166565384,

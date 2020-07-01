@@ -5,16 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  firstMediaItem = {
-    id: 1,
-    name: 'Power Rangers: The Movie',
-    medium: 'Movie',
-    category: 'Action-Adventure',
-    year: 1995,
-    watchedOn: '09/07/2016',
-    isFavorite: false
-  };
-  title: 'AngularPractice';
-  onMediaItemDelete(mediaItem): void {}
-}
+export class AppComponent {}

@@ -35,6 +35,6 @@ import {routing} from './routing/app.routing';
   ],
   bootstrap: [
     AppComponent
-  ] // What is targeted by here.
+  ]
 })
 export class AppModule { }

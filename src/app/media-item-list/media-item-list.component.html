@@ -5,13 +5,13 @@
 </header>
 <section>
   <app-mw-media-item
-    [ngClass]="{'medium-movies': mediaItem.medium==='Movies', 'medium-series':mediaItem.medium==='Series'}"
+    [ngClass]="{'medium-movies': mediaItem.medium==='movies', 'medium-series':mediaItem.medium==='series'}"
     *ngFor="let mediaItem of mediaItems"
     [mediaItem]="mediaItem"
     (delete)="onMediaItemDelete($event)"></app-mw-media-item>
 </section>
 <footer>
   <a routerLink="/add">
-    <img src="assets/01.png" class="icon" alt="Add">
+    <img src="assets/01.png" alt="Add" class="icon">
   </a>
 </footer>
