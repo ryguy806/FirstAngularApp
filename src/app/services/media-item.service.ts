@@ -21,11 +21,11 @@ export class MediaItemService {
       );
   }
 
-  add(mediaItem) {
+  add(mediaItem): Observable<any> {
     return this.http.post('mediaitems', mediaItem);
   }
 
-  delete(mediaItem) {
+  delete(mediaItem): Observable<any> {
     return this.http.delete(`mediaitems/${mediaItem.id}`);
   }
 }
