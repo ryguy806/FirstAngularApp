@@ -8,7 +8,10 @@ import {FavoriteDirective} from './directives/favorite.directive';
 import {CategoryListPipe} from './category-lists/category-list.pipe';
 import {ReactiveFormsModule} from '@angular/forms';
 import {lookupLists, lookupListToken} from './providers/providers';
-import {HttpClientModule} from '@angular/common/http';
+import {HttpClientModule, HttpXhrBackend} from '@angular/common/http';
+import {MockXHRBackend} from './mock-xhr-backend';
+
+
 
 @NgModule({
   declarations: [
@@ -20,7 +23,8 @@ import {HttpClientModule} from '@angular/common/http';
     CategoryListPipe,
   ],
   providers: [
-    {provide: lookupListToken, useValue: lookupLists}
+    {provide: lookupListToken, useValue: lookupLists},
+    {provide: HttpXhrBackend, useClass: MockXHRBackend},
   ],
   imports: [
     BrowserModule,
