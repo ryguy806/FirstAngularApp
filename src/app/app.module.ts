@@ -9,7 +9,6 @@ import {lookupLists, lookupListToken} from './providers/providers';
 import {HttpClientModule, HttpXhrBackend} from '@angular/common/http';
 import {MockXHRBackend} from './mock-xhr-backend';
 import {routing} from './routing/app.routing';
-import {newItemRouting} from './media-item-form/new-item.routing';
 import {NewItemModule} from './media-item-form/new-item.module';
 
 
